@@ -1,0 +1,144 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 13.5px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header, nav, section, footer {
+  max-width: 800px;
+  margin: 6px auto; /* reduced spacing between sections */
+  background: #fff;
+  padding: 6px 16px 12px 16px; /* top, right, bottom, left */
+  border-radius: 6px;
+  box-shadow: none;
+  page-break-inside: avoid;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 6px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0366d6;
+  font-weight: bold;
+}
+
+/* Section Titles */
+section h2 {
+  border-bottom: 2px solid #0366d6;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+  font-size: 1.6em; /* increased size */
+  font-weight: bold;
+  color: #222;
+}
+
+section article {
+  margin-bottom: 16px; /* slightly reduced spacing */
+  padding: 12px;
+  background-color: #fafafa;
+  border-left: 3px solid #0366d6;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+section article h3 {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 1em;
+}
+
+section article p {
+  margin: 3px 0;
+}
+
+ul li {
+  margin-bottom: 4px;
+}
+
+a {
+  color: #0366d6;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media print {
+  body {
+    background: white;
+    color: black;
+    font-size: 13.5px;
+    margin: 0;
+    padding: 0;
+  }
+
+  header, nav, section, footer {
+    box-shadow: none;
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  ul {
+    padding-left: 18px;
+  }
+}
+
+/* Entry Layout Customization */
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.entry-header h3 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.entry-header .date {
+  font-size: 0.95em;
+  font-style: italic;
+}
+
+.entry-position {
+  margin-bottom: 4px;
+}
+
+.entry-details {
+  margin: 4px 0 0 0;
+  padding-left: 20px;
+}
+
+.entry-details li {
+  margin-bottom: 6px;
+}
